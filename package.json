@@ -1,0 +1,26 @@
+{
+  "name": "path-extras",
+  "version": "1.0.0",
+  "description": "A drop-in replacement for the path module",
+  "main": "lib/path.js",
+  "directories": {
+  	"lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha --bail --ui qunit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/curvedmark/path-extras.git"
+  },
+  "keywords": [],
+  "author": "Glen Huang <curvedmark@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/curvedmark/path-extras/issues"
+  },
+  "devDependencies": {
+    "mocha": "1.x"
+  }
+}
