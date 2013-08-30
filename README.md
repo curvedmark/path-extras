@@ -1,6 +1,6 @@
 # path-extras
 
-A drop-in replacement for the `path` module. Provide more methods.
+A drop-in replacement for the `path` module. Provide more methods and Browserify aware.
 
 ## Installation
 

@@ -1,26 +1,33 @@
 {
   "name": "path-extras",
   "version": "1.0.0",
-  "description": "A drop-in replacement for the path module",
+  "description": "A drop-in replacement for the path module, Browserify aware",
   "main": "lib/path.js",
   "directories": {
-  	"lib": "lib",
+    "lib": "lib",
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --bail --ui qunit"
+    "test": "mocha --bail --ui qunit test/test.js && mocha-phantomjs test/test.html"
   },
   "repository": {
     "type": "git",
     "url": "git://github.com/curvedmark/path-extras.git"
   },
-  "keywords": [],
+  "keywords": [
+    "path",
+    "util",
+    "utility"
+  ],
   "author": "Glen Huang <curvedmark@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/curvedmark/path-extras/issues"
   },
   "devDependencies": {
-    "mocha": "1.x"
-  }
+    "mocha": "1.x",
+    "chai": "1.x",
+    "mocha-phantomjs": "3.x"
+  },
+  "browser": "lib/path-browser.js"
 }
